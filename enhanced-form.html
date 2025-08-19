@@ -1,1 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive HTML5 demonstration featuring advanced content elements, media integration, and sophisticated form design with native validation.">
+    <meta name="keywords" content="HTML5, forms, validation, media, tables, lists, accessibility">
+    <meta name="author" content="Web Development Academy">
+    <title>Enhanced HTML5 Content & Forms - Complete Learning Platform</title>
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Enhanced HTML5 Content & Forms">
+    <meta property="og:description" content="Master HTML5 content elements and form design with this comprehensive example.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Web Development Academy",
+        "description": "Advanced HTML5 content and form techniques for modern web development",
+        "url": "https://webdevacademy.example.com"
+    }
+    </script>
+</head>
 
+<body>
+    <!-- Skip navigation link for accessibility -->
+    <a href="#main-content">Skip to main content</a>
+
+    <header role="banner">
+        <h1>📚 HTML5 Content & Forms Mastery</h1>
+        <p><strong>Advanced techniques for modern web development</strong></p>
+        <p><em>Learn HTML5 semantic elements, advanced content organization, and comprehensive form design</em></p>
+    </header>
+
+    <nav role="navigation" aria-label="Main navigation">
+        <h2>Navigation Menu</h2>
+        <ul>
+            <li><a href="#lists" aria-describedby="lists-desc">Lists & Organization</a></li>
+            <li><a href="#tables" aria-describedby="tables-desc">Data Tables</a></li>
+            <li><a href="#media" aria-describedby="media-desc">Media Content</a></li>
+            <li><a href="#forms" aria-describedby="forms-desc">Interactive Forms</a></li>
+            <li><a href="#validation" aria-describedby="validation-desc">Form Validation</a></li>
+        </ul>
+        
+        <!-- Hidden descriptions for screen readers -->
+        <div>
+            <span id="lists-desc" hidden>Learn about different list types and content organization</span>
+            <span id="tables-desc" hidden>Explore data tables and accessible table design</span>
+            <span id="media-desc" hidden>Discover HTML5 media elements and integration</span>
+            <span id="forms-desc" hidden>Master advanced HTML5 form creation</span>
+            <span id="validation-desc" hidden>Implement native HTML5 form validation</span>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+        
+        <!-- Lists Section -->
+        <section id="lists" aria-labelledby="lists-heading">
+            <h2 id="lists-heading">Lists & Content Organization</h2>
+            <p>
+                <strong>Effective use of lists improves content readability</strong> and helps users quickly scan information. 
+                HTML5 provides various list types for different content structures, each serving specific semantic purposes.
+            </p>
+
+            <article>
+                <h3>Unordered Lists - Key Features</h3>
+                <p>Use unordered lists when the sequence of items doesn't matter:</p>
+                <ul>
+                    <li><strong>Semantic HTML5:</strong> Modern element structure with meaningful markup</li>
+                    <li><strong>Responsive Design:</strong> Mobile-first approach for all devices</li>
+                    <li><strong>Accessibility:</strong> Screen reader friendly with proper ARIA attributes</li>
+                    <li><strong>Form Validation:</strong> Native HTML5 validation without JavaScript</li>
+                    <li><strong>Performance:</strong> Optimized loading and minimal resource usage</li>
+                    <li><strong>SEO Benefits:</strong> Search engine friendly content structure</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Ordered Lists - Development Process</h3>
+                <p>Use ordered lists when sequence and priority matter:</p>
+                <ol>
+                    <li><strong>Planning Phase:</strong> Define the structure and content hierarchy</li>
+                    <li><strong>Markup Creation:</strong> Build semantic HTML5 foundation</li>
+                    <li><strong>Content Integration:</strong> Add meaningful text and media</li>
+                    <li><strong>Form Implementation:</strong> Create interactive user interfaces</li>
+                    <li><strong>Validation Setup:</strong> Configure HTML5 native validation</li>
+                    <li><strong>Accessibility Testing:</strong> Ensure compliance with WCAG guidelines</li>
+                    <li><strong>Cross-browser Testing:</strong> Verify compatibility across platforms</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>Nested Lists - Complex Information Hierarchy</h3>
+                <p>Lists can be nested to show relationships and sub-categories:</p>
+                <ul>
+                    <li><strong>Frontend Technologies</strong>
+                        <ul>
+                            <li>HTML5 Semantic Elements</li>
+                            <li>CSS3 Advanced Features
+                                <ul>
+                                    <li>Grid Layout</li>
+                                    <li>Flexbox</li>
+                                    <li>Custom Properties</li>
+                                </ul>
+                            </li>
+                            <li>JavaScript ES6+</li>
+                        </ul>
+                    </li>
+                    <li><strong>Backend Technologies</strong>
+                        <ul>
+                            <li>Server-side Languages</li>
+                            <li>Database Management</li>
+                            <li>API Development</li>
+                        </ul>
+                    </li>
+                    <li><strong>DevOps & Tools</strong>
+                        <ul>
+                            <li>Version Control (Git)</li>
+                            <li>Build Tools</li>
+                            <li>Testing Frameworks</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Definition Lists - Technical Glossary</h3>
+                <p>Definition lists are perfect for glossaries, FAQs, and term explanations:</p>
+                <dl>
+                    <dt><strong>Semantic Elements</strong></dt>
+                    <dd>HTML5 introduces elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;aside&gt;</code> that provide meaning to content structure rather than just presentation. These elements help search engines and assistive technologies understand page content better.</dd>
+                    
+                    <dt><strong>Form Validation</strong></dt>
+                    <dd>Built-in validation attributes like <code>required</code>, <code>pattern</code>, <code>minlength</code>, <code>maxlength</code>, and input types eliminate the need for custom JavaScript validation in many cases. This provides immediate user feedback and improves accessibility.</dd>
+                    
+                    <dt><strong>Media Integration</strong></dt>
+                    <dd>Native support for <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements with comprehensive fallback options and accessibility features built-in, including closed captions and audio descriptions.</dd>
+                    
+                    <dt><strong>Progressive Enhancement</strong></dt>
+                    <dd>A development strategy that starts with a basic, functional version that works everywhere, then adds enhanced features for more capable browsers and devices.</dd>
+                    
+                    <dt><strong>ARIA (Accessible Rich Internet Applications)</strong></dt>
+                    <dd>A set of attributes that can be added to HTML elements to provide additional semantic information for assistive technologies, especially important for dynamic content and complex UI components.</dd>
+                </dl>
+            </article>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="tables" aria-labelledby="tables-heading">
+            <h2 id="tables-heading">Data Tables & Information Display</h2>
+            <p>
+                <strong>Tables should be used exclusively for tabular data presentation.</strong> Modern HTML5 tables include 
+                comprehensive accessibility features and semantic markup for better user experience.
+            </p>
+
+            <article>
+                <h3>Student Progress Tracking System</h3>
+                <p>This table demonstrates proper table structure with headers, captions, and scope attributes:</p>
+                
+                <table>
+                    <caption>
+                        <strong>Web Development Course Progress Tracking</strong><br>
+                        <em>Updated: <time datetime="2025-08-19">August 19, 2025</time></em>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Student ID</th>
+                            <th scope="col">Student Name</th>
+                            <th scope="col">Course Title</th>
+                            <th scope="col">Progress (%)</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Last Activity</th>
+                            <th scope="col">Current Grade</th>
+                            <th scope="col">Estimated Completion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">STU001</th>
+                            <td>Sarah Johnson</td>
+                            <td>HTML5 Fundamentals</td>
+                            <td>95%</td>
+                            <td><strong>Nearly Complete</strong></td>
+                            <td><time datetime="2025-08-18">August 18, 2025</time></td>
+                            <td>A+ (98/100)</td>
+                            <td><time datetime="2025-08-22">August 22, 2025</time></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">STU002</th>
+                            <td>Michael Chen</td>
+                            <td>CSS Grid & Flexbox</td>
+                            <td>78%</td>
+                            <td><em>In Progress</em></td>
+                            <td><time datetime="2025-08-17">August 17, 2025</time></td>
+                            <td>B+ (87/100)</td>
+                            <td><time datetime="2025-09-05">September 5, 2025</time></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">STU003</th>
+                            <td>Emma Rodriguez</td>
+                            <td>JavaScript ES6+</td>
+                            <td>45%</td>
+                            <td><em>In Progress</em></td>
+                            <td><time datetime="2025-08-15">August 15, 2025</time></td>
+                            <td>B (82/100)</td>
+                            <td><time datetime="2025-09-20">September 20, 2025</time></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">STU004</th>
+                            <td>David Kim</td>
+                            <td>React Fundamentals</td>
+                            <td>23%</td>
+                            <td><em>Just Started</em></td>
+                            <td><time datetime="2025-08-10">August 10, 2025</time></td>
+                            <td>C+ (76/100)</td>
+                            <td><time datetime="2025-10-15">October 15, 2025</time></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">STU005</th>
+                            <td>Lisa Wang</td>
+                            <td>Node.js Backend</td>
+                            <td>89%</td>
+                            <td><strong>Nearly Complete</strong></td>
+                            <td><time datetime="2025-08-19">August 19, 2025</time></td>
+                            <td>A (94/100)</td>
+                            <td><time datetime="2025-08-25">August 25, 2025</time></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="2">Class Average</th>
+                            <td>All Courses</td>
+                            <td><strong>66%</strong></td>
+                            <td>5 Active Students</td>
+                            <td>Daily Updates</td>
+                            <td><strong>B Average (87.4/100)</strong></td>
+                            <td>September 2025</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <article>
+                <h3>Course Curriculum Overview</h3>
+                <p>Complex table showing course structure with merged cells and groupings:</p>
+                
+                <table>
+                    <caption>Complete Web Development Curriculum Structure</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Module</th>
+                            <th scope="col">Week</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Duration (Hours)</th>
+                            <th scope="col">Prerequisites</th>
+                            <th scope="col">Assessment Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" rowspan="3">Foundation</th>
+                            <td>1-2</td>
+                            <td>HTML5 Semantic Structure</td>
+                            <td>20</td>
+                            <td>None</td>
+                            <td>Project + Quiz</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>CSS3 Fundamentals</td>
+                            <td>25</td>
+                            <td>HTML5 Basics</td>
+                            <td>Design Portfolio</td>
+                        </tr>
+                        <tr>
+                            <td>5-6</td>
+                            <td>Responsive Design</td>
+                            <td>20</td>
+                            <td>CSS3 Fundamentals</td>
+                            <td>Mobile-First Project</td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="4">Interactive</th>
+                            <td>7-8</td>
+                            <td>JavaScript ES6+ Basics</td>
+                            <td>30</td>
+                            <td>HTML/CSS Proficiency</td>
+                            <td>Coding Exercises</td>
+                        </tr>
+                        <tr>
+                            <td>9-10</td>
+                            <td>DOM Manipulation</td>
+                            <td>25</td>
+                            <td>JavaScript Basics</td>
+                            <td>Interactive Web App</td>
+                        </tr>
+                        <tr>
+                            <td>11-12</td>
+                            <td>Forms & Validation</td>
+                            <td>20</td>
+                            <td>JavaScript DOM</td>
+                            <td>Form Application</td>
+                        </tr>
+                        <tr>
+                            <td>13-14</td>
+                            <td>AJAX & APIs</td>
+                            <td>25</td>
+                            <td>JavaScript Proficiency</td>
+                            <td>API Integration Project</td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Advanced</th>
+                            <td>15-16</td>
+                            <td>React Framework</td>
+                            <td>35</td>
+                            <td>JavaScript Advanced</td>
+                            <td>Component Library</td>
+                        </tr>
+                        <tr>
+                            <td>17-18</td>
+                            <td>Full-Stack Integration</td>
+                            <td>40</td>
+                            <td>All Previous Modules</td>
+                            <td>Capstone Project</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="3">Total Program Duration</th>
+                            <td><strong>240 Hours</strong></td>
+                            <td colspan="2"><strong>18 Weeks Complete</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" aria-labelledby="media-heading">
+            <h2 id="media-heading">Media Content & Integration</h2>
+            <p>
+                <strong>HTML5 provides native support for multimedia content</strong> with built-in accessibility features 
+                and fallback options for different browsers and devices.
+            </p>
+
+            <article>
+                <h3>Image Integration with Semantic Markup</h3>
+                <p>Proper use of images with accessibility considerations:</p>
+                
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                         alt="Developer working on code with multiple monitors showing HTML, CSS, and JavaScript files" 
+                         width="600" height="400">
+                    <figcaption>
+                        <strong>Modern Web Development Environment:</strong> 
+                        A developer's workspace showcasing the integration of HTML5, CSS3, and JavaScript 
+                        in a professional coding environment with proper tooling and multiple displays.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe14c0e21?w=600&h=400&fit=crop" 
+                         alt="Close-up view of HTML code on a computer screen showing semantic markup structure" 
+                         width="600" height="400">
+                    <figcaption>
+                        <strong>HTML5 Semantic Code Structure:</strong> 
+                        Clean, well-organized HTML5 markup demonstrating proper use of semantic elements 
+                        and accessibility attributes for modern web development.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Audio Content</h3>
+                <p>HTML5 audio elements with comprehensive fallback and controls:</p>
+                
+                <figure>
+                    <audio controls preload="metadata" aria-labelledby="audio-desc">
+                        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+                        <p><strong>Your browser doesn't support HTML5 audio.</strong> 
+                        <a href="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3">Download the audio file</a> instead.</p>
+                    </audio>
+                    <figcaption id="audio-desc">
+                        <strong>Sample Audio:</strong> Demonstration of HTML5 audio element with multiple format support 
+                        and fallback content for accessibility and browser compatibility.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Video Content</h3>
+                <p>HTML5 video with accessibility features and multiple sources:</p>
+                
+                <figure>
+                    <video controls width="600" height="400" preload="metadata" aria-labelledby="video-desc">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm">
+                        <track kind="captions" src="captions-en.vtt" srclang="en" label="English Captions">
+                        <track kind="descriptions" src="descriptions-en.vtt" srclang="en" label="English Audio Descriptions">
+                        <p><strong>Your browser doesn't support HTML5 video.</strong> 
+                        <a href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">Download the video</a> instead.</p>
+                    </video>
+                    <figcaption id="video-desc">
+                        <strong>Educational Video:</strong> Sample video demonstrating HTML5 video element capabilities 
+                        including multiple format support, captions, and audio descriptions for full accessibility compliance.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Embedded Content</h3>
+                <p>Using iframe for external content integration:</p>
+                
+                <figure>
+                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" 
+                            width="600" height="400" 
+                            title="Interactive map showing London area for web development meetups"
+                            allowfullscreen>
+                        <p><strong>Interactive Map:</strong> 
+                        <a href="https://www.openstreetmap.org/">View on OpenStreetMap</a></p>
+                    </iframe>
+                    <figcaption>
+                        <strong>Location Map:</strong> Interactive map showing locations of web development 
+                        meetups and coding bootcamps in the London area, embedded using iframe with proper accessibility attributes.
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Forms Section -->
+        <section id="forms" aria-labelledby="forms-heading">
+            <h2 id="forms-heading">Advanced HTML5 Forms</h2>
+            <p>
+                <strong>HTML5 forms provide powerful native validation and improved user experience</strong> 
+                without requiring JavaScript. This comprehensive form demonstrates various input types and validation techniques.
+            </p>
+
+            <form action="#" method="post" novalidate autocomplete="on" aria-labelledby="forms-heading">
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p><em>Please provide your basic contact information. Fields marked with * are required.</em></p>
+                    
+                    <div>
+                        <label for="firstName">First Name *</label>
+                        <input type="text" 
+                               id="firstName" 
+                               name="firstName" 
+                               required 
+                               minlength="2" 
+                               maxlength="50"
+                               placeholder="Enter your first name"
+                               autocomplete="given-name"
+                               pattern="[A-Za-z\s]{2,50}"
+                               title="First name should contain only letters and spaces, 2-50 characters">
+                    </div>
+
+                    <div>
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" 
+                               id="lastName" 
+                               name="lastName" 
+                               required 
+                               minlength="2" 
+                               maxlength="50"
+                               placeholder="Enter your last name"
+                               autocomplete="family-name"
+                               pattern="[A-Za-z\s]{2,50}"
+                               title="Last name should contain only letters and spaces, 2-50 characters">
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address *</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               required 
+                               placeholder="your.email@example.com"
+                               autocomplete="email"
+                               aria-describedby="email-help">
+                        <small id="email-help">We'll use this for course notifications and certificates</small>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" 
+                               id="phone" 
+                               name="phone" 
+                               placeholder="+1 (555) 123-4567"
+                               autocomplete="tel"
+                               pattern="[\+]?[0-9\s\(\)\-]{10,20}"
+                               title="Please enter a valid phone number">
+                    </div>
+
+                    <div>
+                        <label for="birthdate">Date of Birth</label>
+                        <input type="date" 
+                               id="birthdate" 
+                               name="birthdate" 
+                               min="1950-01-01" 
+                               max="2007-01-01"
+                               autocomplete="bdate">
+                    </div>
+
+                    <div>
+                        <label for="website">Personal Website/Portfolio</label>
+                        <input type="url" 
+                               id="website" 
+                               name="website" 
+                               placeholder="https://yourportfolio.com"
+                               autocomplete="url">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Preferences</legend>
+                    <p><em>Tell us about your learning goals and preferences.</em></p>
+
+                    <div>
+                        <label for="experience">Programming Experience Level *</label>
+                        <select id="experience" name="experience" required aria-describedby="experience-help">
+                            <option value="">-- Please select your level --</option>
+                            <option value="beginner">Complete Beginner (No prior experience)</option>
+                            <option value="some-html">Some HTML/CSS (Basic knowledge)</option>
+                            <option value="intermediate">Intermediate (Can build basic websites)</option>
+                            <option value="advanced">Advanced (Professional experience)</option>
+                            <option value="expert">Expert (Senior developer level)</option>
+                        </select>
+                        <small id="experience-help">This helps us customize the course difficulty for you</small>
+                    </div>
+
+                    <fieldset>
+                        <legend>Preferred Learning Topics * (Select all that interest you)</legend>
+                        <div>
+                            <input type="checkbox" id="html5" name="topics" value="html5" required>
+                            <label for="html5">HTML5 & Semantic Markup</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="css3" name="topics" value="css3">
+                            <label for="css3">CSS3 & Advanced Styling</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="javascript" name="topics" value="javascript">
+                            <label for="javascript">JavaScript ES6+ Programming</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="react" name="topics" value="react">
+                            <label for="react">React & Component Development</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="nodejs" name="topics" value="nodejs">
+                            <label for="nodejs">Node.js Backend Development</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="databases" name="topics" value="databases">
+                            <label for="databases">Database Design & Management</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferred Learning Format *</legend>
+                        <div>
+                            <input type="radio" id="online" name="format" value="online" required>
+                            <label for="online">Online Self-Paced Learning</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="live" name="format" value="live" required>
+                            <label for="live">Live Virtual Classes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="hybrid" name="format" value="hybrid" required>
+                            <label for="hybrid">Hybrid (Online + In-Person)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="in-person" name="format" value="in-person" required>
+                            <label for="in-person">In-Person Classes Only</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="budget">Course Budget Range (USD)</label>
+                        <input type="range" 
+                               id="budget" 
+                               name="budget" 
+                               min="100" 
+                               max="5000" 
+                               step="100" 
+                               value="1000"
+                               aria-describedby="budget-display">
+                        <output for="budget" id="budget-display">$1000</output>
+                        <small>Move the slider to indicate your preferred budget range</small>
+                    </div>
+
+                    <div>
+                        <label for="start-date">Preferred Start Date</label>
+                        <input type="date" 
+                               id="start-date" 
+                               name="start-date" 
+                               min="2025-09-01" 
+                               max="2026-12-31"
+                               value="2025-09-15">
+                    </div>
+
+                    <div>
+                        <label for="timezone">Your Timezone</label>
+                        <select id="timezone" name="timezone">
+                            <option value="">-- Select your timezone --</option>
+                            <optgroup label="Americas">
+                                <option value="America/New_York">Eastern Time (ET)</option>
+                                <option value="America/Chicago">Central Time (CT)</option>
+                                <option value="America/Denver">Mountain Time (MT)</option>
+                                <option value="America/Los_Angeles">Pacific Time (PT)</option>
+                                <option value="America/Toronto">Eastern Time - Canada</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="Europe/London">Greenwich Mean Time (GMT)</option>
+                                <option value="Europe/Paris">Central European Time (CET)</option>
+                                <option value="Europe/Berlin">Central European Time (CET)</option>
+                                <option value="Europe/Rome">Central European Time (CET)</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="Asia/Tokyo">Japan Standard Time (JST)</option>
+                                <option value="Asia/Shanghai">China Standard Time (CST)</option>
+                                <option value="Asia/Kolkata">India Standard Time (IST)</option>
+                                <option value="Asia/Dubai">Gulf Standard Time (GST)</option>
+                            </optgroup>
+                            <optgroup label="Africa">
+                                <option value="Africa/Cairo">Eastern European Time (EET)</option>
+                                <option value="Africa/Nairobi">East Africa Time (EAT)</option>
+                                <option value="Africa/Lagos">West Africa Time (WAT)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Technical Information</legend>
+                    <p><em>Help us understand your technical setup and requirements.</em></p>
+
+                    <div>
+                        <label for="operating-system">Primary Operating System</label>
+                        <datalist id="os-options">
+                            <option value="Windows 11">
+                            <option value
